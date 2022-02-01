@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">usuario:</div>
+          <div class="col-6">
+            <input
+              [(ngModel)]="model.UsuarioId"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">clave:</div>
+          <div class="col-6">
+            <input
+              [(ngModel)]="model.Contrasenia"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center pt-3">
+        <button
+          (click)="ingresar()"
+          class="btn"
+          style="background-color: cornflowerblue"
+        >
+          Ingresar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-4"></div>
+</div>
